@@ -78,7 +78,17 @@ public class ClockDisplay
      */
     private void updateDisplay()
     {
-        displayString = hours.getDisplayValue() + ":" + 
+        if (hours.getValue() == 0){
+            displayString = "12:" + minutes.getDisplayValue();
+        }
+        else if (hours.getValue() >= 13){
+            hours.setValue(hours.getValue()-12);
+            displayString = hours.getDisplayValue() + ":" + 
                         minutes.getDisplayValue();
+        }
+        else{
+            displayString = hours.getDisplayValue() + ":" + 
+                        minutes.getDisplayValue();
+        }    
     }
 }
