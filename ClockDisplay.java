@@ -9,6 +9,8 @@
  * and reacts by incrementing the display. This is done in the usual clock
  * fashion: the hour increments when the minutes roll over to zero.
  * 
+ * 3.38
+ * 
  * @author Michael Kölling and David J. Barnes, modified by Jay Ganji
  * @version 2021.02.06
  */
